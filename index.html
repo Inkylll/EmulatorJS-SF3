@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Street Fighter III: 3rd Strike - Emulator</title>
+    <script src="EmulatorJS/emulator.js"></script>
+</head>
+<body>
+    <h1>Street Fighter III: 3rd Strike - Fight for the Future</h1>
+    <div id="emulator"></div>
+
+    <script>
+        window.onload = function() {
+            // Initialize the emulator with the ROM file
+            EmulatorJS.init({
+                element: "#emulator",  // The div where the game will be displayed
+                game: "games/street_fighter_iii_3rd_strike.zip"  // Path to the ROM file
+            });
+        };
+    </script>
+</body>
+</html>
